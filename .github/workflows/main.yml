@@ -9,6 +9,9 @@ jobs:
     actualizarRepoLocal:
       runs-on: windows-latest
       steps:
+        - name: Clonar Repositorio
+          uses: actions/checkout@v2
+          
         - name: Actualizar Repositorio 
           run: git fetch && git reset --hard origin/master
    
