@@ -11,10 +11,8 @@ jobs:
       steps:
         - name: Clonar Repositorio
           uses: actions/checkout@v2
-          with:
-            fetch-depth: 0
           
         - name: Actualizar Repositorio 
-          run: git fetch && git reset --hard origin/master
+          run: git-fetch && git-reset --hard origin/main
    
   
