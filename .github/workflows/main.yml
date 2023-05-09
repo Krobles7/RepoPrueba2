@@ -1,0 +1,15 @@
+name: Automatizacion
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    actualizarRepoLocal:
+      runs-on: windows-latest
+      steps:
+        - name: Actualizar Repositorio 
+          run: git fetch && git reset --hard origin/master
+   
+  
