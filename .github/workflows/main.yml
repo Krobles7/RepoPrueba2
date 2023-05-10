@@ -11,7 +11,7 @@ jobs:
       steps:
         - name: Actualizar Repositorio 
           run: |
-            cd ../RepoPrueba2.git
+            cd ../RepoPrueba2
             git pull
    
   
